@@ -25,12 +25,6 @@ $(function(){
 
 });
 
-// Global Variables
-// *********************************** //
-var priorities = [];
-
-// *********************************** //
-
 //grabs id of of priority where user clicked "+", sends ajax request to change values
 function up_priority()
 {
