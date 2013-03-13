@@ -1,6 +1,6 @@
-class AddSubscribersTable < ActiveRecord::Migration
+class AddUsersTable < ActiveRecord::Migration
   def change
-    create_table :subscribers do |t|
+    create_table :users do |t|
       t.string :username
       t.string :email
       t.string :password_digest
