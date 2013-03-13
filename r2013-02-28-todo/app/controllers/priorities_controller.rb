@@ -1,4 +1,5 @@
 class PrioritiesController < ApplicationController
+  before_filter :ensure_logged_in
   def index
     @priorities = @auth.priorities.order(:value).reverse
   end

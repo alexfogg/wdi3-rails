@@ -1,0 +1,7 @@
+%p.newlink= link_to('New Mixtape', new_mixtape_path, :class => 'button radius') if is_admin
+%table
+  - @mixtapes.each do |mixtape|
+    %tr{:class => cycle('row0', 'row1')}
+      %td= link_to(mixtape.name, mixtape)
+      %td= mixtape.name
+      %td= link_to('Edit', edit_mixtape_path(mixtape), :class => 'button radius tiny') if is_admin

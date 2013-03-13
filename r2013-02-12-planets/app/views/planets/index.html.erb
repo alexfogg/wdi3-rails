@@ -1,0 +1,9 @@
+<% @planet.each do |planet| %>
+  <section>
+    <%= link_to(planet.name, planet_path(planet.id)) %> has  <%= pluralize(planet.moons, 'moon') %>.
+    <%= button_to 'Delete', planet_delete_path(planet.id) %>
+    <%= button_to('Edit Planet', planet_edit_path(planet.id)) %>
+    <br>
+  </section>
+  <% end %>
+

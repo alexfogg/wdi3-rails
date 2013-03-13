@@ -1,0 +1,9 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-02-14-cookbook_development
+  pool: 5
+  host: localhost
+  username: alexfogg
+  password:

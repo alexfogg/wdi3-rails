@@ -1,0 +1,5 @@
+= link_to('New', new_user_path, :class => 'button radius tiny success')
+= link_to('New', new_user_path, :remote => true, :class => 'button radius tiny alert')
+#new_user
+%ol#users
+  = render(:partial => 'users')

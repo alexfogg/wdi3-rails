@@ -1,0 +1,26 @@
+    <%= image_tag(@artist.image) %>
+    <br>
+    <div id='info'>
+    Artist: <%= @artist.name %>
+    <br>
+    Nationality: <%= @artist.nationality %>
+    <br>
+    DOB: <%= @artist.dob.strftime('%B %d, %Y') %>
+    <br>
+    Period: <%= @artist.period %>
+    </div>
+
+    <% @artist.paintings.each do |painting| %>
+        <%= image_tag(painting.image) %>
+        <br>
+        Painting: <%= painting.title %>
+        <br>
+        Year: <%= painting.year %>
+        <br>
+        DOB: <%= painting.medium %>
+        <br>
+        Period: <%= painting.style %>
+    <% end %>
+
+    <%= link_to 'Delete', @artist, :method => :delete, :confirm => 'Do you eally want to delete?' %>
+    <%= link_to 'Edit', edit_artist_path(@artist) %>

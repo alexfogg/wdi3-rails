@@ -1,0 +1,10 @@
+#show
+%h2= @genre.name
+
+
+%p.newlink= link_to('Edit Genre', edit_genre_path, :class => 'button radius') if is_admin
+
+%h4 Songs
+- @genre.songs.each do |song|
+    = link_to(song.name, song_path)
+    %br

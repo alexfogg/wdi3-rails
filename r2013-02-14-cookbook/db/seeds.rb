@@ -1,0 +1,21 @@
+b1 = Book.create(:title => 'Fifty Shades of Chicken', :cuisine => 'Poultry', :chef => 'F.L. Flower', :image => 'http://brokelyn.wpengine.netdna-cdn.com/wp-content/uploads/2012/11/fifty-shades-of-chicken.jpeg')
+
+r1 = Recipe.create(:name => 'Dripping Thighs', :course => 'Main', :cooktime => 45, :servingsize => 4, :instructions => 'Preheat the oven to 450 degrees F. In a large bowl, toss the chicken, garlic, 1 teaspoon salt, and pepper together. In a small saucepan, simmer together onion, wine, bay leaf, cinnamon stick, and a pinch of salt until most of the liquid has evaporated, 15 to 20 minutes. Toss in the honey and butter. Spoon the mixture over the chicken and toss well. Spread thighs, onion mixture, and any juices onto a baking sheet. Bake until chicken is no longer pink and onions are meltingly tender and caramelized, about 25 minutes.', :image => 'http://g-ecx.images-amazon.com/images/G/01/rando/ems/images/cooking/DrippingThighs.gif')
+r2 = Recipe.create(:name => 'Bacon Bound Chicken Wings', :course => 'Appetizer', :cooktime => 45, :servingsize => 4, :instructions => '. In a large bowl, combine the maple syrup, soy sauce, scallions, vinegar, garlic, and pepper and mix well. Add the chicken wings and toss them gently so they are bathed in the heady liquid. Cover the bowl with plastic wrap and let the chicken marinate in the refrigerator for at least 2 hours or overnight. Preheat the oven to 450F. Slice the bacon in half lengthwise to yield long thin ribbons, perfect for restraining your bird. Remove the wings from the marinade and wipe off any clinging garlic or scallion pieces. Tightly tie up each chicken wing in a bacon ribbon and lay the chicken wings, wing tips up and expectant, on a large baking pan. Cover the pan loosely with foil and bake for 30 minutes. Uncover the dish and continue to bake until golden and crisp, another 10 to 15 minutes. Serve hot, using your hands to devour.', :image => 'http://s3-ec.buzzfed.com/static/enhanced/webdr02/2012/11/19/11/enhanced-buzz-2190-1353342453-8.jpg')
+r3 = Recipe.create(:name => 'White wine chicken breasts with sesame oil and scallions', :course => 'Main', :cooktime => 45, :servingsize => 4, :instructions => 'Cook chicken blah blah', :image => 'http://s3-ec.buzzfed.com/static/enhanced/webdr01/2012/11/19/17/enhanced-buzz-19278-1353364855-3.jpg')
+i1 = Ingredient.create(:name => 'Bacon', :measurement => '8 strips', :cost => '3', :image => 'http://www.peoplespharmacy.com/photos/bacon_fat_defeats_plantar_wart.jpg')
+i2 = Ingredient.create(:name => 'Chicken', :measurement => '1 chicken', :cost => '6', :image => 'http://www.teeswater.ca/tswwp1/wp-content/uploads/raw_chicken.jpg')
+i3 = Ingredient.create(:name => 'Salt', :measurement => '1 tsp', :cost => '.25', :image => 'http://blogs.plos.org/obesitypanacea/files/2010/10/SaltShaker.jpg')
+i4 = Ingredient.create(:name => 'Onion', :measurement => '', :cost => '', :image => 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Onion_on_White.JPG/220px-Onion_on_White.JPG')
+i5 = Ingredient.create(:name => 'Maple Syrup', :measurement => '1 tsp', :cost => '1', :image => 'http://images.sciencedaily.com/2011/03/110330131316-large.jpg')
+i6 = Ingredient.create(:name => 'White Wine', :measurement => '1 cup', :cost => '3', :image => 'http://4.bp.blogspot.com/-fWBLxxfO2bc/UG8jXYREAoI/AAAAAAAAC84/Dw0pdinziD4/s1600/wine.jpg')
+i7 = Ingredient.create(:name => 'Soy Sauce', :measurement => '2 tsp', :cost => '.5', :image => 'http://www.topnews.in/files/Soy_Sauce.jpg')
+i8 = Ingredient.create(:name => 'Pepper', :measurement => '1 tsp', :cost => '.25', :image => 'http://www.colourbox.com/preview/3191812-661211-pepper-mill-and-black-peppercorn-isolated-on-white-background.jpg')
+i9 = Ingredient.create(:name => 'Garlic', :measurement => '1 clove', :cost => '.5', :image => 'http://bed56888308e93972c04-0dfc23b7b97881dee012a129d9518bae.r34.cf1.rackcdn.com/sites/default/files/garlic_310_0.jpg')
+i10 = Ingredient.create(:name => 'Honey', :measurement => '1 tsp', :cost => '.5', :image => 'http://showupfitness.com/wp-content/uploads/2012/08/honey-kills-bacteria1.jpg')
+
+b1.recipes = [r1, r2, r3]
+
+r1.ingredients = [i2, i3, i4, i6, i8, i9, i10]
+r2.ingredients = [i1, i2, i3, i4, i5, i8]
+r3.ingredients = [i2, i3, i4, i6, i7, i9]

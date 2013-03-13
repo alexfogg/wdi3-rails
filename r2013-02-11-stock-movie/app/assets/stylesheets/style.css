@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Coustard);
+
+body {
+  font-family: 'Coustard', serif;
+  background: url('background.png') repeat;
+  padding-left: 10px;
+}
+
+#d1 {
+  width: 300px;
+border: 5px solid black;
+}
+
+#d5 {
+  background-color: #FFFFFF;
+  border: 5px solid black;
+  font-size: 24pt;
+  width: 300px;
+  padding: 50px;
+  text-align: center;
+}
+
+#d6 {
+  background-color: #FFFFFF;
+  border: 5px solid black;
+  font-size: 24pt;
+  width: 300px;
+  padding: 50px;
+  text-align: center;
+}
+
+img {
+  max-width:100%; max-height:100%
+}
+
+#d10 {
+  background-color: #FFFFFF;
+  border: 5px solid black;
+  font-size: 12pt;
+  width: 800px;
+  padding: 50px;
+  text-align: center;
+}
+
+nav {
+  font-size: 18pt;
+  padding-top: 5pt;
+}
+
+#s1 {
+  font-size: 14pt;
+  background-color: #FFFFFF;
+  padding: 3px;
+}

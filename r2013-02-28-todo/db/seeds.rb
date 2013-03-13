@@ -6,9 +6,9 @@ u1 = User.create(:name => 'Bob', :email => 'bob@example.com', :password => 'a', 
 u2 = User.create(:name => 'Joe', :email => 'joe@example.com', :password => 'a', :password_confirmation => 'a')
 u3 = User.create(:name => 'Tim', :email => 'tim@example.com', :password => 'a', :password_confirmation => 'a')
 
-t1 = Task.create(:title => 'Breakfast', :description => 'Eat breakfast.', :duedate => '2013/04/01')
-t2 = Task.create(:title => 'Lunch', :description => 'Eat lunch.', :duedate => '2013/05/01')
-t3 = Task.create(:title => 'Dinner', :description => 'Eat dinner.', :duedate => '2013/06/01')
+t1 = Task.create(:address => '10 East 21st Street NYC', :title => 'Breakfast', :description => 'Eat breakfast.', :duedate => '2013/04/01')
+t2 = Task.create(:address => 'Paris, France', :title => 'Lunch', :description => 'Eat lunch.', :duedate => '2013/05/01')
+t3 = Task.create(:address => 'London, England', :title => 'Dinner', :description => 'Eat dinner.', :duedate => '2013/06/01')
 
 p1 = Priority.create(:name => 'Low', :color => '#0000FF', :value => 1)
 p2 = Priority.create(:name => 'Medium', :color => '#00FF00', :value => 2)

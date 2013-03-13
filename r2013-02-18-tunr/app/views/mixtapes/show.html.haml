@@ -1,0 +1,10 @@
+#show
+%h2= @mixtape.name
+
+
+%p.newlink= link_to('Edit Mixtape', edit_mixtape_path, :class => 'button radius') if is_admin
+
+%h4 Songs
+- @mixtape.songs.each do |song|
+  = link_to(song.name, song_path)
+  %br

@@ -1,0 +1,16 @@
+%h1 Bank of WDI
+
+.left
+  %h2 Checking Account
+  #checkamount
+  %p
+    .one= text_field_tag 'checking'
+    .one= submit_tag 'deposit', :id => 'depositbtnchecking'
+    .one= submit_tag 'withdraw', :id => 'withdrawbtnchecking'
+.right
+  %h2 Savings Account
+  #saveamount
+  %p
+    .one= text_field_tag 'savings'
+    .one= submit_tag 'deposit', :id => 'depositbtnsavings'
+    .one= submit_tag 'withdraw', :id => 'withdrawbtnsavings'

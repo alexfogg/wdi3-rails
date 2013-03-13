@@ -1,0 +1,12 @@
+#show
+
+%h2= audio_tag("podcast.mp3", :controls => true)
+%h2= @song.name
+%p= image_tag(@song.image)
+%p= @song.filename
+%p Cost: $#{@song.cost}
+
+%p.newlink= link_to('Purchase Song', purchase_song_path, :class => 'button radius') if @auth.present?
+
+%p.newlink= link_to('Edit Song', edit_song_path, :class => 'button radius') if is_admin
+

@@ -1,0 +1,8 @@
+%li.has-flyout
+  %a{:href => "#"} Browse Mixtapes
+  %a.flyout-toggle{:href => "#"}
+    %span
+  %ul.flyout
+    - Mixtape.all.each do |mixtape|
+      %li= link_to(mixtape.name, mixtape)
+

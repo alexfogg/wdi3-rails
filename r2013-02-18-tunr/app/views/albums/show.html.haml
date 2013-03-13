@@ -1,0 +1,14 @@
+#show
+%h2= @album.name
+%p= image_tag(@album.image)
+%p.newlink
+  = link_to('Edit Album', edit_album_path, :class => 'button radius') if is_admin
+
+%h4 Artists
+= link_to(@album.artists.first.name, @album.artists.first)
+
+%h4 Songs
+- @album.songs.each do |song|
+  = link_to(song.name, song_path)
+  %br
+

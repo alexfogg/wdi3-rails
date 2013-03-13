@@ -16,4 +16,7 @@
 //= require 'foundation/javascripts/foundation.min.js'
 //= require 'foundation/javascripts/app.js'
 //= require 'minicolors/jquery.minicolors.js'
-//= require 'todo'
+//= require 'tasks.js'
+//= require 'priority.js'
+//= require 'map.js'
+//= require 'todo.js'

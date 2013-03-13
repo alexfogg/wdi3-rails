@@ -1,0 +1,13 @@
+    <%= image_tag(@painting.image) %>
+    <br>
+    <div id='info'>
+    Painting: <%= @painting.title %>
+    <br>
+    Year: <%= @painting.year %>
+    <br>
+    DOB: <%= @painting.medium %>
+    <br>
+    Period: <%= @painting.style %>
+    </div>
+
+    <%= link_to 'Delete', @painting, :method => :delete, :confirm => 'Do you eally want to delete?'%>

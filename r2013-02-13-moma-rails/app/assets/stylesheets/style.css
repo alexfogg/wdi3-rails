@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Adamina);
+
+body {
+  font-family: 'Adamina', serif;
+  padding: 10px;
+}
+
+/*section {
+  border: solid black 2px;
+  display: inline;
+  width: 250px;
+  height: 400px;
+  margin: 5px;
+}*/
+
+h1 {
+  font-size: 18pt;
+  display: inline;
+  padding: 3px;
+  text-align: center;
+}
+
